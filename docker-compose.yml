@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  gaiad:
+    build: .
+    environment:
+    - HOME=/workdir
+    command:
+    - start
+    ports:
+      - "26657:26657"
+    tty: true
+    networks:
+      localnet:
+        ipv4_address: 192.168.10.3
+networks:
+  localnet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.10.0/16
