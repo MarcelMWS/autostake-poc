@@ -89,3 +89,5 @@ Test User account with name tl and address: `cosmos1hk06zl6krdnamxljwheq7372kf5g
 RPC on your local machine: `http://localhost:26657`
 
 You can use the existing accounts to send coins/balances to your or other newly created accounts.
+
+For gaiad logs run: `docker compose logs -f`
