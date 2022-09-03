@@ -39,7 +39,7 @@ go: go version go1.18.2 darwin/amd64
 
 ### Info
 
-Cosmos-based projects contains the `gaiad tx distribution withdraw-rewards` and `gaiad tx distribution withdraw-rewards --commission` command to withdraw your rewards via manual triggered transaction.
+Cosmos-based projects contains the `gaiad tx distribution withdraw-rewards` and `gaiad tx distribution withdraw-rewards --commission` command to withdraw your rewards via a manual triggered transaction.
 
 There are several automatic withdraw / auto compound projects like https://restake.app/ https://github.com/eco-stake/restake
 
@@ -49,7 +49,7 @@ In this project I implemented withdraw rewards directly into chain app. After st
 
 This is a showcase project and it setups a local testnet in docker on your machine.
 
-The withdrawing code isn't released here, but you can use my "gaiad" binary to play with and test it :)
+The withdrawing code isn't released here, but you can use my "gaiad" binary in `bin/` folder to play with and test it :)
 
 ### Start
 
