@@ -43,7 +43,7 @@ Cosmos-based projects contains the `gaiad tx distribution withdraw-rewards` and 
 
 There are several automatic withdraw / auto compound projects like https://restake.app/ https://github.com/eco-stake/restake
 
-Restake use the authz module and an additional service for validators to withdraw rewards.
+Restake uses the authz module and an additional service for validators to withdraw rewards.
 
 In this project I implemented withdraw rewards directly into chain app. After staking/delegating you'll be able to watch your account balance increasing at every block. You don't need to enter manually `gaiad tx distribution withdraw-rewards` and `gaiad tx distribution withdraw-rewards --commission` command any more.
 
