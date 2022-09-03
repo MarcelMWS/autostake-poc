@@ -59,21 +59,64 @@ In this folder:
 ./start.sh
 ```
 
+or alternatively:
+
+```bash
+docker compose up -d
+```
+
 ### Test
+
+Test it and type in your cli in this project dir:
+First cmd:
 
 ```bash
 gaiad q bank balances cosmos1hk06zl6krdnamxljwheq7372kf5g6688gmdhc3
+```
 
+Second cmd:
+
+```bash
 gaiad tx staking delegate cosmosvaloper1gddnzwdchpp24446k55tdhctfmjsg6ls947g7p 10000000stake --from tl --home app-home/ --keyring-backend test --chain-id autostake
+```
 
-## Repeat
+Repeat this cmd to see changes:
+
+```bash
 gaiad q bank balances cosmos1hk06zl6krdnamxljwheq7372kf5g6688gmdhc3
+```
+
+or alternatively:
+
+Test it and type in your cli in this project dir:
+First cmd:
+
+```bash
+./bin/gaiad-v7.0.3-darwin-amd64 q bank balances cosmos1hk06zl6krdnamxljwheq7372kf5g6688gmdhc3
+```
+
+Second cmd:
+
+```bash
+./bin/gaiad-v7.0.3-darwin-amd64 tx staking delegate cosmosvaloper1gddnzwdchpp24446k55tdhctfmjsg6ls947g7p 10000000stake --from tl --home app-home/ --keyring-backend test --chain-id autostake
+```
+
+Repeat this cmd to see changes:
+
+```bash
+./bin/gaiad-v7.0.3-darwin-amd64 q bank balances cosmos1hk06zl6krdnamxljwheq7372kf5g6688gmdhc3
 ```
 
 ### Stop / Reset database
 
 ```bash
 ./stop_reset.sh
+```
+
+or alternatively:
+
+```bash
+docker compose down
 ```
 
 ### Additional Info
